@@ -5,11 +5,11 @@ import java.sql.DriverManager;
 
 public class DbContext {
 
-	private static String url = "jdbc:mysql://localhost:3306/sms";
+	private static String url = "jdbc:mysql://localhost:3306/sms?autoReconnect=true&useSSL=false";
 	private static String userName = "root";
 	private static String password = "Navodya@2001";
 	private static Connection conection;
-	
+
 	public static Connection getConnection() {
 		
 		try {
